@@ -1,0 +1,722 @@
+/* ==========================================================
+   ASIAN BUILDING MATERIALS
+   Production Responsive CSS
+   Part 1
+==========================================================*/
+
+/* ==========================================
+   Large Desktop
+========================================== */
+
+@media (max-width:1400px){
+
+    .container{
+
+        width:min(1200px,92%);
+
+    }
+
+}
+
+/* ==========================================
+   Laptop
+========================================== */
+
+@media (max-width:1200px){
+
+    section{
+
+        padding:90px 0;
+
+    }
+
+    .hero-content{
+
+        max-width:650px;
+
+    }
+
+    .intro-grid,
+    .why-grid{
+
+        gap:50px;
+
+    }
+
+    .category-grid,
+    .products-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .brands-grid{
+
+        grid-template-columns:repeat(4,1fr);
+
+    }
+
+    .services-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .stats-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .testimonial-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .footer-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+/* ==========================================
+   Tablet
+========================================== */
+
+@media (max-width:992px){
+
+    h1{
+
+        font-size:3rem;
+
+    }
+
+    h2{
+
+        font-size:2.3rem;
+
+    }
+
+    .nav-links{
+
+        display:none;
+
+    }
+
+    .header-phone{
+
+        display:none;
+
+    }
+
+    .mobile-menu{
+
+        display:flex;
+
+    }
+
+    .intro-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .why-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .why-image{
+
+        order:-1;
+
+    }
+
+    .cta-wrapper{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        padding:50px;
+
+    }
+
+    .contact-strip-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+/* ==========================================
+   Mobile Landscape
+========================================== */
+
+@media (max-width:768px){
+
+    section{
+
+        padding:70px 0;
+
+    }
+
+    .hero{
+
+        min-height:850px;
+
+    }
+
+    .hero-content{
+
+        text-align:center;
+
+        margin:auto;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+    .hero-features{
+
+        justify-content:center;
+
+    }
+
+    .section-title{
+
+        margin-bottom:50px;
+
+    }
+
+    .category-grid,
+    .products-grid,
+    .brands-grid,
+    .services-grid,
+    .stats-grid,
+    .testimonial-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .contact-strip-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .footer-grid{
+
+        grid-template-columns:1fr;
+
+        gap:40px;
+
+    }
+
+    .footer-bottom{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+}
+
+/* ==========================================================
+   ASIAN BUILDING MATERIALS
+   Production Responsive CSS
+   Part 2
+==========================================================*/
+
+/*==========================================
+  MOBILE (576px)
+==========================================*/
+
+@media (max-width:576px){
+
+    html{
+
+        font-size:15px;
+
+    }
+
+    .container{
+
+        width:92%;
+
+    }
+
+    section{
+
+        padding:60px 0;
+
+    }
+
+    /*-------------------------
+      HERO
+    -------------------------*/
+
+    .hero{
+
+        min-height:760px;
+
+        padding-top:90px;
+
+    }
+
+    .hero-content{
+
+        max-width:100%;
+
+        text-align:center;
+
+    }
+
+    .hero-tag{
+
+        font-size:12px;
+
+        padding:8px 16px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:2.3rem;
+
+        line-height:1.2;
+
+    }
+
+    .hero-content p{
+
+        font-size:15px;
+
+        margin-bottom:30px;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+    .hero-buttons .btn{
+
+        width:100%;
+
+    }
+
+    .hero-features{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:18px;
+
+    }
+
+    .scroll-indicator{
+
+        display:none;
+
+    }
+
+    /*-------------------------
+      SECTION
+    -------------------------*/
+
+    .section-title{
+
+        margin-bottom:40px;
+
+    }
+
+    .section-title h2{
+
+        font-size:2rem;
+
+    }
+
+    .section-title p{
+
+        font-size:15px;
+
+    }
+
+    /*-------------------------
+      COMPANY
+    -------------------------*/
+
+    .intro-grid{
+
+        gap:40px;
+
+    }
+
+    .intro-content h3{
+
+        font-size:1.6rem;
+
+    }
+
+    .intro-image::before,
+
+    .intro-image::after{
+
+        display:none;
+
+    }
+
+    /*-------------------------
+      CARDS
+    -------------------------*/
+
+    .category-card,
+
+    .product-card,
+
+    .brand-card,
+
+    .service-card,
+
+    .testimonial-card,
+
+    .stat-card{
+
+        border-radius:18px;
+
+    }
+
+    .category-content,
+
+    .product-content,
+
+    .testimonial-card{
+
+        padding:24px;
+
+    }
+
+    .category-image,
+
+    .product-image{
+
+        height:220px;
+
+    }
+
+    /*-------------------------
+      FEATURES
+    -------------------------*/
+
+    .feature-item{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        align-items:center;
+
+    }
+
+    .feature-icon{
+
+        margin-bottom:10px;
+
+    }
+
+    /*-------------------------
+      CTA
+    -------------------------*/
+
+    .cta-wrapper{
+
+        padding:35px 25px;
+
+    }
+
+    .cta-buttons{
+
+        width:100%;
+
+        flex-direction:column;
+
+    }
+
+    .cta-buttons .btn{
+
+        width:100%;
+
+    }
+
+    /*-------------------------
+      CONTACT STRIP
+    -------------------------*/
+
+    .contact-box{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .contact-box i{
+
+        margin-bottom:12px;
+
+    }
+
+    /*-------------------------
+      MAP
+    -------------------------*/
+
+    .map-wrapper iframe{
+
+        height:350px;
+
+    }
+
+    /*-------------------------
+      FOOTER
+    -------------------------*/
+
+    .footer{
+
+        padding-top:70px;
+
+    }
+
+    .footer-grid{
+
+        text-align:center;
+
+    }
+
+    .footer-social{
+
+        justify-content:center;
+
+    }
+
+    .footer-bottom-right{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+    }
+
+    /*-------------------------
+      FLOATING BUTTONS
+    -------------------------*/
+
+    .floating-whatsapp,
+
+    .floating-call,
+
+    #scrollTopBtn{
+
+        width:52px;
+
+        height:52px;
+
+        right:18px;
+
+    }
+
+    .floating-whatsapp{
+
+        bottom:145px;
+
+    }
+
+    .floating-call{
+
+        bottom:80px;
+
+    }
+
+    #scrollTopBtn{
+
+        bottom:15px;
+
+    }
+
+    /*-------------------------
+      MOBILE DRAWER
+    -------------------------*/
+
+    .mobile-navigation{
+
+        width:100%;
+
+        right:-100%;
+
+    }
+
+    .mobile-header{
+
+        padding:20px;
+
+    }
+
+    .mobile-header img{
+
+        width:150px;
+
+    }
+
+    .mobile-navigation ul{
+
+        padding:20px;
+
+    }
+
+    .mobile-contact{
+
+        margin:20px;
+
+    }
+
+    /*-------------------------
+      QUICK CONTACT
+    -------------------------*/
+
+    .quick-contact-card{
+
+        width:94%;
+
+        padding:30px;
+
+    }
+
+    .quick-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .quick-buttons .btn{
+
+        width:100%;
+
+    }
+
+}
+
+/*==========================================
+  EXTRA SMALL DEVICES
+==========================================*/
+
+@media (max-width:400px){
+
+    html{
+
+        font-size:14px;
+
+    }
+
+    .hero{
+
+        min-height:700px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:2rem;
+
+    }
+
+    .hero-content p{
+
+        font-size:14px;
+
+    }
+
+    .btn{
+
+        padding:14px 22px;
+
+        font-size:14px;
+
+    }
+
+    .section-title h2{
+
+        font-size:1.75rem;
+
+    }
+
+    .stat-card h2{
+
+        font-size:2.4rem;
+
+    }
+
+}
+
+/*==========================================
+  LANDSCAPE DEVICES
+==========================================*/
+
+@media (max-height:650px) and (orientation:landscape){
+
+    .hero{
+
+        min-height:700px;
+
+    }
+
+}
+
+/*==========================================
+  PRINT
+==========================================*/
+
+@media print{
+
+    .floating-whatsapp,
+
+    .floating-call,
+
+    #scrollTopBtn,
+
+    .mobile-navigation,
+
+    .mobile-overlay,
+
+    .quick-contact,
+
+    .hero-buttons{
+
+        display:none !important;
+
+    }
+
+    body{
+
+        background:#ffffff;
+
+        color:#000000;
+
+    }
+
+}
